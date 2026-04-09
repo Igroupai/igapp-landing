@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>igapp · Soluciones digitales con IA</title>
+<meta name="description" content="Micro soluciones digitales para tu negocio. Landings, microsites, chatbots y aplicaciones a medida.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0d0d0f;color:#e8e6f0;min-height:100vh}
+.hero{padding:64px 32px 48px;text-align:center;border-bottom:1px solid #ffffff12}
+.logo{font-size:13px;letter-spacing:3px;color:#7f77dd;font-weight:500;margin-bottom:32px}
+.hero h1{font-size:28px;font-weight:500;line-height:1.35;color:#f0eeff;max-width:520px;margin:0 auto 16px}
+.hero p{font-size:15px;color:#9e9baa;max-width:400px;margin:0 auto 36px;line-height:1.6}
+.badge{display:inline-block;background:#1a1830;border:1px solid #534ab7;color:#afa9ec;font-size:11px;padding:4px 14px;border-radius:20px;letter-spacing:1px;margin-bottom:20px}
+.products{padding:40px 24px;max-width:760px;margin:0 auto}
+.products-title{font-size:12px;color:#5f5e5a;letter-spacing:2px;text-align:center;margin-bottom:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.card{background:#13121a;border:1px solid #ffffff14;border-radius:12px;padding:20px 18px;cursor:pointer;transition:border-color .2s}
+.card:hover{border-color:#534ab7}
+.card h3{font-size:14px;font-weight:500;color:#e8e6f0;margin-bottom:6px}
+.card p{font-size:12px;color:#6b6878;line-height:1.5}
+.tag{display:inline-block;font-size:10px;padding:2px 8px;border-radius:10px;margin-top:10px;font-weight:500}
+.card-icon{width:32px;height:32px;border-radius:8px;margin-bottom:14px;display:flex;align-items:center;justify-content:center}
+.chat-wrap{max-width:520px;margin:0 auto;padding:0 24px 60px}
+.chat-box{background:#13121a;border:1px solid #ffffff14;border-radius:16px;overflow:hidden}
+.chat-header{padding:14px 18px;border-bottom:1px solid #ffffff10;display:flex;align-items:center;gap:10px}
+.chat-dot{width:8px;height:8px;border-radius:50%;background:#5dcaa5}
+.chat-name{font-size:13px;font-weight:500;color:#e8e6f0}
+.chat-sub{font-size:11px;color:#5f5e5a}
+.chat-messages{padding:18px;display:flex;flex-direction:column;gap:12px;min-height:200px;max-height:300px;overflow-y:auto}
+.msg{max-width:85%;font-size:13px;line-height:1.5;padding:10px 14px;border-radius:12px}
+.msg.bot{background:#1e1d2a;color:#c8c4d8;border-radius:4px 12px 12px 12px}
+.msg.user{background:#2d2550;color:#ddd8ff;align-self:flex-end;border-radius:12px 4px 12px 12px}
+.chat-input-row{padding:12px;border-top:1px solid #ffffff10;display:flex;gap:8px}
+.chat-input-row input{flex:1;background:#0d0d0f;border:1px solid #ffffff18;border-radius:8px;padding:9px 14px;font-size:13px;color:#e8e6f0;outline:none}
+.chat-input-row input::placeholder{color:#4a4858}
+.send-btn{background:#534ab7;border:none;border-radius:8px;width:36px;height:36px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.opts{display:flex;flex-wrap:wrap;gap:6px;padding:0 18px 14px}
+.opt{background:#1a1830;border:1px solid #534ab7;color:#afa9ec;font-size:11px;padding:5px 12px;border-radius:20px;cursor:pointer;transition:background .15s}
+.opt:hover{background:#2d2550}
+.section-label{font-size:12px;color:#5f5e5a;letter-spacing:2px;text-align:center;padding:40px 0 20px}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="logo">IGAPP · INFLUENCER GROUP</div>
+  <div class="badge">Soluciones digitales con IA</div>
+  <h1>Micro soluciones digitales para tu negocio, sin complicaciones</h1>
+  <p>Landings, microsites, chatbots y aplicaciones a medida. Rápido, temporal o permanente.</p>
+</div>
+
+<div class="products">
+  <div class="products-title">LO QUE HACEMOS</div>
+  <div class="grid">
+    <div class="card" onclick="selectProduct('Landing express')">
+      <div class="card-icon" style="background:#1a1830">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="3" width="12" height="10" rx="2" stroke="#7f77dd" stroke-width="1"/><line x1="5" y1="7" x2="11" y2="7" stroke="#7f77dd" stroke-width="1"/><line x1="5" y1="9.5" x2="9" y2="9.5" stroke="#534ab7" stroke-width="1"/></svg>
+      </div>
+      <h3>Landing express</h3>
+      <p>Página de captación lista en horas. Ideal para campañas temporales.</p>
+      <span class="tag" style="background:#1a1830;color:#7f77dd;border:1px solid #534ab7">Desde 1 mes</span>
+    </div>
+    <div class="card" onclick="selectProduct('Microsite')">
+      <div class="card-icon" style="background:#041f1a">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="2" width="14" height="12" rx="2" stroke="#1d9e75" stroke-width="1"/><line x1="1" y1="5.5" x2="15" y2="5.5" stroke="#1d9e75" stroke-width="1"/><rect x="3" y="7.5" width="4" height="4" rx="1" stroke="#0f6e56" stroke-width="1"/></svg>
+      </div>
+      <h3>Microsite</h3>
+      <p>Sitio completo, liviano y optimizado para un producto o nicho específico.</p>
+      <span class="tag" style="background:#041f1a;color:#1d9e75;border:1px solid #0f6e56">3 a 12 meses</span>
+    </div>
+    <div class="card" onclick="selectProduct('Chatbot RAG')">
+      <div class="card-icon" style="background:#1f0e0a">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="9" rx="2" stroke="#d85a30" stroke-width="1"/><path d="M5 14l3-3h4" stroke="#d85a30" stroke-width="1" stroke-linecap="round"/><circle cx="5.5" cy="6.5" r="1" fill="#d85a30"/><circle cx="8" cy="6.5" r="1" fill="#d85a30"/><circle cx="10.5" cy="6.5" r="1" fill="#d85a30"/></svg>
+      </div>
+      <h3>Chatbot RAG</h3>
+      <p>Asistente conversacional entrenado con la información de tu negocio.</p>
+      <span class="tag" style="background:#1f0e0a;color:#d85a30;border:1px solid #993c1d">Con IA</span>
+    </div>
+    <div class="card" onclick="selectProduct('Micro app SaaS')">
+      <div class="card-icon" style="background:#0a1020">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" rx="1" stroke="#378add" stroke-width="1"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="#378add" stroke-width="1"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="#185fa5" stroke-width="1"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="#185fa5" stroke-width="1"/></svg>
+      </div>
+      <h3>Micro app SaaS</h3>
+      <p>Aplicación pequeña con funcionalidad específica. Modelo por suscripción.</p>
+      <span class="tag" style="background:#0a1020;color:#378add;border:1px solid #185fa5">Mensual</span>
+    </div>
+    <div class="card" onclick="selectProduct('Automatización con IA')">
+      <div class="card-icon" style="background:#1a1308">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5" stroke="#ba7517" stroke-width="1"/><path d="M8 5v3l2 2" stroke="#ef9f27" stroke-width="1" stroke-linecap="round"/></svg>
+      </div>
+      <h3>Automatización con IA</h3>
+      <p>Flujos automáticos para tareas repetitivas. Ahorra tiempo desde el día uno.</p>
+      <span class="tag" style="background:#1a1308;color:#ba7517;border:1px solid #854f0b">A medida</span>
+    </div>
+    <div class="card" onclick="selectProduct('Proyecto especial')">
+      <div class="card-icon" style="background:#1a0d14">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><polygon points="8,2 10,6 14,6 11,9 12,13 8,11 4,13 5,9 2,6 6,6" stroke="#d4537e" stroke-width="1" fill="none"/></svg>
+      </div>
+      <h3>Proyecto especial</h3>
+      <p>Soluciones únicas según tu rubro y necesidades. Lo armamos juntos.</p>
+      <span class="tag" style="background:#1a0d14;color:#d4537e;border:1px solid #993556">Consultemos</span>
+    </div>
+  </div>
+</div>
+
+<div class="section-label">HABLEMOS DE TU PROYECTO</div>
+<div class="chat-wrap">
+  <div class="chat-box">
+    <div class="chat-header">
+      <div class="chat-dot"></div>
+      <div>
+        <div class="chat-name">Asistente igapp</div>
+        <div class="chat-sub">Responde al instante</div>
+      </div>
+    </div>
+    <div class="chat-messages" id="msgs">
+      <div class="msg bot">Hola, soy el asistente de igapp. ¿En qué tipo de solución digital estás pensando para tu negocio?</div>
+    </div>
+    <div class="opts" id="opts">
+      <span class="opt" onclick="quickReply('Necesito una landing page')">Landing page</span>
+      <span class="opt" onclick="quickReply('Quiero un chatbot para mi empresa')">Chatbot</span>
+      <span class="opt" onclick="quickReply('Tengo un proyecto especial')">Proyecto especial</span>
+    </div>
+    <div class="chat-input-row">
+      <input id="cinput" placeholder="Escribe tu consulta..." onkeydown="if(event.key==='Enter')sendMsg()"/>
+      <button class="send-btn" onclick="sendMsg()">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="white"><path d="M2 8l12-6-5 6 5 6z"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+const flows={
+  landing:['¡Perfecto! Las landing pages express son ideales para campañas rápidas o ciudades específicas.','¿Para qué rubro es? Por ejemplo: transferencias de vehículos, salud, servicios legales...'],
+  chatbot:['Los chatbots RAG son potentes — se entrenan con la info de tu empresa y responden como un ejecutivo.','¿Tu negocio tiene documentos, catálogos o preguntas frecuentes que el bot podría usar?'],
+  proyecto:['Me encanta. Los proyectos especiales son los más interesantes.','Cuéntame de qué se trata tu negocio y qué problema quieres resolver.'],
+  default:['Entendido. Cuéntame un poco más sobre tu negocio.','¿Tienes alguna fecha límite o urgencia para este proyecto?']
+};
+const leadFlow=['¡Genial! Para conectarte con el equipo de igapp, ¿me das tu nombre?','¿Y tu número de WhatsApp para que un especialista te contacte hoy?','Perfecto. En breve alguien de igapp se pondrá en contacto contigo. ¡Gracias!'];
+let collecting=false,leadStep=0;
+function addMsg(text,who){
+  const d=document.getElementById('msgs');
+  const m=document.createElement('div');
+  m.className='msg '+who;
+  m.textContent=text;
+  d.appendChild(m);
+  d.scrollTop=d.scrollHeight;
+}
+function botReply(text){setTimeout(()=>addMsg(text,'bot'),400);}
+function clearOpts(){document.getElementById('opts').innerHTML='';}
+function showLeadOpts(){
+  const o=document.getElementById('opts');
+  o.innerHTML='<span class="opt" onclick="startLead()">Sí, quiero que me contacten</span><span class="opt" onclick="addMsg(\'Lo pienso\',\'user\')">Lo pienso</span>';
+}
+function startLead(){clearOpts();collecting=true;leadStep=0;botReply(leadFlow[0]);}
+function selectProduct(name){
+  addMsg('Me interesa: '+name,'user');clearOpts();
+  const key=name.toLowerCase().includes('land')?'landing':name.toLowerCase().includes('chat')?'chatbot':name.toLowerCase().includes('especial')?'proyecto':'default';
+  flows[key].forEach((m,i)=>setTimeout(()=>addMsg(m,'bot'),400+i*800));
+  setTimeout(showLeadOpts,400+flows[key].length*800);
+}
+function quickReply(text){
+  addMsg(text,'user');clearOpts();
+  const key=text.toLowerCase().includes('land')?'landing':text.toLowerCase().includes('chat')?'chatbot':'proyecto';
+  flows[key].forEach((m,i)=>setTimeout(()=>addMsg(m,'bot'),400+i*800));
+  setTimeout(showLeadOpts,400+flows[key].length*800);
+}
+function sendMsg(){
+  const inp=document.getElementById('cinput');
+  const val=inp.value.trim();
+  if(!val)return;
+  addMsg(val,'user');inp.value='';clearOpts();
+  if(collecting){
+    if(leadStep===0){botReply(leadFlow[1]);leadStep++;}
+    else if(leadStep===1){botReply(leadFlow[2]);collecting=false;}
+    return;
+  }
+  const low=val.toLowerCase();
+  const key=low.includes('land')?'landing':low.includes('chat')||low.includes('bot')?'chatbot':low.includes('especial')?'proyecto':'default';
+  flows[key].forEach((m,i)=>setTimeout(()=>addMsg(m,'bot'),400+i*800));
+  setTimeout(showLeadOpts,400+flows[key].length*800);
+}
+</script>
+</body>
+</html>
