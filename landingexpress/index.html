@@ -25,8 +25,7 @@
     </div>
 </header>
 
-<!-- 1. HERO PRINCIPAL -->
-<section class="hero" id="inicio">
+<section class="hero" id="inicio" style="padding-bottom: 4rem;">
     <canvas id="hero-canvas"></canvas>
     <div class="container text-center hero-inner">
         <div class="hero-content mx-auto">
@@ -44,15 +43,14 @@
             <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-muted);">Sin tocar tu servidor. Nosotros nos encargamos de la técnica.</p>
         </div>
     </div>
-    <div class="hero-horizon"></div>
 </section>
 
 <div class="sections-bg">
 
 <!-- PRUEBA SOCIAL -->
-<section class="section" style="padding: 2rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
+<section class="section" style="padding: 4rem 0 2rem;">
     <div class="container text-center reveal">
-        <p class="eyebrow" style="margin-bottom: 1rem;">Más de 50+ proyectos digitalizados con éxito</p>
+        <p class="eyebrow" style="margin-bottom: 1.5rem;">Más de 50+ proyectos digitalizados con éxito</p>
         <div class="grid grid-3 align-center gap-large" style="opacity: 0.7;">
             <div><h3 style="font-family: 'Outfit'; margin:0;">Validación Rápida</h3></div>
             <div><h3 style="font-family: 'Outfit'; margin:0;">Conversión Activa</h3></div>
@@ -309,7 +307,7 @@
             </div>
             
             <!-- BLOQUE 2: MENSUAL -->
-            <div class="glass-card reveal text-center" style="border: 2px solid #10b981; position: relative;">
+            <div class="glass-card reveal text-center" style="border: 2px solid #10b981; position: relative; padding-top: 2.5rem;">
                 <span class="badge" style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #10b981; color: #fff;">Suscripción Activa</span>
                 <h3 style="margin-bottom: 0.5rem;">Mantención mensual</h3>
                 <h2 style="font-size: 2.5rem; margin: 1rem 0;">$9.990<span style="font-size: 1rem; color: var(--text-muted); font-weight:normal;"> / mes</span></h2>
@@ -376,7 +374,7 @@
             <h2 class="section-title">Empecemos a trabajar hoy</h2>
             <p class="section-desc mx-auto">No pierdas más clics pagados enviando gente a tu Instagram. Llévalos a un sistema de captación y multiplica tus resultados en solo 72 horas.</p>
             
-            <div id="wizard-content" style="transition: opacity 0.3s ease; text-align: left; max-width: 500px; margin: 2rem auto 0; background: rgba(0,0,0,0.2); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); min-height: 300px; display: flex; flex-direction: column; justify-content: center;"></div>
+            <div id="wizard-content" style="transition: opacity 0.3s ease; text-align: left; width: 100%; max-width: 640px; margin: 2rem auto 0; background: rgba(0,0,0,0.2); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); min-height: 300px; display: flex; flex-direction: column; justify-content: center;"></div>
 
             <p style="margin-top: 2rem; font-weight: 600; color: #FFC247; font-size: 1.1rem;">Implementación en 72h + activación inmediata</p>
             <p style="margin-top: 0.5rem; font-size: 0.95rem; color: #fff;">Cupos limitados por semana para asegurar calidad</p>
@@ -413,6 +411,15 @@
         </div>
     </div>
 </footer>
+
+<!-- FLOATING WHATSAPP CTA -->
+<a href="#contacto" id="wa-float" title="Habla con nosotros" aria-label="Ir al chatbot">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.558 4.121 1.533 5.855L.057 23.499a.5.5 0 0 0 .602.602l5.647-1.476A11.935 11.935 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.528-5.214-1.443l-.374-.22-3.352.877.877-3.351-.22-.374A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+    </svg>
+    <span>Chatea con nosotros</span>
+</a>
 
 </div><!-- end .sections-bg -->
 
@@ -548,6 +555,60 @@ details[open] > summary::after {
     font-size: 0.85rem;
     margin-top: 0.5rem;
     min-height: 20px;
+}
+@media (max-width: 600px) {
+    .wizard-input-group {
+        flex-direction: column;
+    }
+    .wizard-btn-next {
+        width: 100%;
+        height: 48px;
+    }
+    #wizard-content {
+        padding: 1.25rem;
+    }
+}
+/* ===== FLOATING WHATSAPP CTA ===== */
+#wa-float {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: #25D366;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.85rem 1.5rem 0.85rem 1rem;
+    border-radius: 50px;
+    box-shadow: 0 8px 32px rgba(37, 211, 102, 0.45);
+    transition: all 0.3s ease;
+    animation: floatPulse 2.5s ease-in-out infinite;
+}
+#wa-float:hover {
+    background: #1ebe5d;
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 14px 40px rgba(37, 211, 102, 0.6);
+}
+#wa-float svg {
+    flex-shrink: 0;
+}
+@keyframes floatPulse {
+    0%, 100% { box-shadow: 0 8px 32px rgba(37, 211, 102, 0.45); }
+    50%       { box-shadow: 0 8px 48px rgba(37, 211, 102, 0.7); }
+}
+@media (max-width: 600px) {
+    #wa-float span { display: none; }
+    #wa-float {
+        padding: 1rem;
+        border-radius: 50%;
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
 }
 </style>
 <script src="wizard.js"></script>
