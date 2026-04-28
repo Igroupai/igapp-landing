@@ -88,8 +88,6 @@ h1,h2,h3,h4{
     width:auto;
     object-fit:contain;
     flex-shrink:0;
-    /* Brighten so light-gray parts of the PNG become white on dark bg */
-    filter:brightness(1.8) contrast(1.1);
 }
 .nav-list{display:flex;gap:2rem;flex-wrap:nowrap;}
 .nav-list a{font-size:.9rem;font-weight:500;color:var(--text-muted);white-space:nowrap;}
