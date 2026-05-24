@@ -41,7 +41,10 @@
                 <li><a href="#faq">FAQ</a></li>
             </ul>
         </nav>
-        <a href="#contacto" class="btn btn-primary">Reservar Cupo</a>
+        <a href="#contacto" class="btn btn-primary"
+           data-cal-namespace="asesoria-30min"
+           data-cal-link="influencergroup/asesoria-30min"
+           data-cal-config='{"layout":"month_view","theme":"auto"}'>Reservar Cupo</a>
         <div class="mobile-menu-btn"><span></span><span></span><span></span></div>
     </div>
 </header>
@@ -63,7 +66,10 @@
                 <p style="color: var(--text-muted); font-size: 1rem; margin-top: 0.5rem;">Sin inversión inicial alta. Escalable según tus necesidades.</p>
             </div>
             <div class="hero-actions">
-                <a href="#contacto" class="btn btn-primary btn-large">Quiero mi Landing en 72h</a>
+                <a href="#contacto" class="btn btn-primary btn-large"
+                   data-cal-namespace="asesoria-30min"
+                   data-cal-link="influencergroup/asesoria-30min"
+                   data-cal-config='{"layout":"month_view","theme":"auto"}'>Quiero mi Landing en 72h</a>
                 <a href="#para-quien" class="btn-link">Ver detalles del servicio <span class="arrow">→</span></a>
             </div>
             <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-muted);">Sin tocar tu servidor. Nosotros nos encargamos de la técnica.</p>
@@ -151,7 +157,10 @@
             </article>
         </div>
         <div class="text-center mt-4 reveal" style="margin-top:3rem;">
-            <a href="#contacto" class="btn btn-primary btn-large">Quiero mi caso aquí en 72h</a>
+            <a href="#contacto" class="btn btn-primary btn-large"
+               data-cal-namespace="asesoria-30min"
+               data-cal-link="influencergroup/asesoria-30min"
+               data-cal-config='{"layout":"month_view","theme":"auto"}'>Quiero mi caso aquí en 72h</a>
         </div>
     </div>
 </section>
@@ -321,7 +330,10 @@
                 <h3 style="font-size: 4rem; margin: 0; color: #FFC247; line-height:1;">72<span style="font-size:2rem;">h</span></h3>
                 <p style="font-size: 1.2rem; font-weight: 600;">Garantía de implementación</p>
                 <p style="color: var(--text-muted); font-size: 0.9rem;">Desde el momento en que validamos tu brief, el reloj comienza. Sin excusas.</p>
-                <a href="#contacto" class="btn btn-primary mt-4">Solicitar mi Landing</a>
+                <a href="#contacto" class="btn btn-primary mt-4"
+                   data-cal-namespace="asesoria-30min"
+                   data-cal-link="influencergroup/asesoria-30min"
+                   data-cal-config='{"layout":"month_view","theme":"auto"}'>Solicitar mi Landing</a>
             </div>
         </div>
     </div>
@@ -714,5 +726,39 @@ details[open] > summary::after {
 }
 </style>
 <script src="wizard.js"></script>
+
+<!-- Cal.com embed loader (Asesoría IGApp 30min) -->
+<script type="text/javascript">
+(function (C, A, L) {
+  let p = function (a, ar) { a.q.push(ar); };
+  let d = C.document;
+  C.Cal = C.Cal || function () {
+    let cal = C.Cal; let ar = arguments;
+    if (!cal.loaded) {
+      cal.ns = {}; cal.q = cal.q || [];
+      d.head.appendChild(d.createElement("script")).src = A;
+      cal.loaded = true;
+    }
+    if (ar[0] === L) {
+      const api = function () { p(api, arguments); };
+      const namespace = ar[1]; api.q = api.q || [];
+      if (typeof namespace === "string") {
+        cal.ns[namespace] = cal.ns[namespace] || api;
+        p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]);
+      } else { p(cal, ar); }
+      return;
+    }
+    p(cal, ar);
+  };
+})(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", "asesoria-30min", { origin: "https://cal.com" });
+Cal.ns["asesoria-30min"]("ui", {
+  theme: "auto",
+  cssVarsPerTheme: { light: { "cal-brand": "#0091FF" }, dark: { "cal-brand": "#0091FF" } },
+  hideEventTypeDetails: false,
+  layout: "month_view"
+});
+</script>
+<!-- /Cal.com embed -->
 </body>
 </html>
