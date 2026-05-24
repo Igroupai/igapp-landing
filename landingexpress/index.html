@@ -37,6 +37,7 @@
             <ul class="nav-list">
                 <li><a href="#para-quien">Para quién es</a></li>
                 <li><a href="#que-incluye">¿Qué incluye?</a></li>
+                <li><a href="#casos">Casos</a></li>
                 <li><a href="#faq">FAQ</a></li>
             </ul>
         </nav>
@@ -75,6 +76,77 @@
             <div><h3 style="font-family: 'Outfit'; margin:0;">Validación Rápida</h3></div>
             <div><h3 style="font-family: 'Outfit'; margin:0;">Conversión Activa</h3></div>
             <div><h3 style="font-family: 'Outfit'; margin:0;">Soberanía Digital</h3></div>
+        </div>
+    </div>
+</section>
+
+<!-- CASOS REALES -->
+<style>
+    .case-card{padding:0;display:flex;flex-direction:column;}
+    .case-preview{width:100%;aspect-ratio:16/10;overflow:hidden;background:#0a0a0f;border-bottom:1px solid rgba(255,255,255,.08);}
+    .case-preview img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;transition:transform .5s ease;}
+    .case-card:hover .case-preview img{transform:scale(1.04);}
+    .case-info{padding:1.5rem 1.75rem 1.75rem;display:flex;flex-direction:column;gap:.6rem;flex:1;}
+    .case-name{font-family:'Outfit',sans-serif;font-size:1.25rem;font-weight:700;margin:0;color:#fff;}
+    .case-domain{font-size:.78rem;color:var(--accent-primary);font-weight:600;letter-spacing:.05em;text-transform:lowercase;margin:0;}
+    .case-desc{color:var(--text-muted);font-size:.92rem;line-height:1.5;margin:.3rem 0 1rem;flex:1;}
+    .case-cta{align-self:flex-start;}
+</style>
+<section class="section" id="casos" style="padding-top:3rem;">
+    <div class="container">
+        <div class="section-header text-center reveal">
+            <span class="badge badge-warning">Casos reales</span>
+            <h2 class="section-title">Marcas que ya convierten con su Landing Express</h2>
+            <p class="section-desc mx-auto">Estos clientes lanzaron en 72 horas y hoy capturan tráfico activo bajo el subdominio igapp.cl. Tu landing puede verse así.</p>
+        </div>
+        <div class="grid grid-2 gap-large mt-4">
+            <article class="glass-card case-card reveal">
+                <a href="https://mandala.igapp.cl" target="_blank" rel="noopener" class="case-preview">
+                    <img src="https://res.cloudinary.com/de8mq5b9q/image/upload/q_auto/f_auto/v1779611211/mandala_xiii1b.png" alt="Mandala Chile — vestuario artesanal" loading="lazy">
+                </a>
+                <div class="case-info">
+                    <p class="case-domain">mandala.igapp.cl</p>
+                    <h3 class="case-name">Mandala Chile</h3>
+                    <p class="case-desc">Vestuario artesanal personalizado: ponchos, chaquetas y kimonos hechos a mano con materiales nobles, a la medida de cada cliente.</p>
+                    <a href="https://mandala.igapp.cl" target="_blank" rel="noopener" class="btn-link case-cta">Visitar sitio <span class="arrow">→</span></a>
+                </div>
+            </article>
+            <article class="glass-card case-card reveal" style="transition-delay:100ms">
+                <a href="https://enfokarte.igapp.cl" target="_blank" rel="noopener" class="case-preview">
+                    <img src="https://res.cloudinary.com/de8mq5b9q/image/upload/q_auto/f_auto/v1779611216/enfokarte_bcqan6.png" alt="Enfokarte — fotografía artística" loading="lazy">
+                </a>
+                <div class="case-info">
+                    <p class="case-domain">enfokarte.igapp.cl</p>
+                    <h3 class="case-name">Enfokarte</h3>
+                    <p class="case-desc">Fotografía artística: sesiones personalizadas de naturaleza, retratos y eventos, capturando el alma del instante presente.</p>
+                    <a href="https://enfokarte.igapp.cl" target="_blank" rel="noopener" class="btn-link case-cta">Visitar sitio <span class="arrow">→</span></a>
+                </div>
+            </article>
+            <article class="glass-card case-card reveal">
+                <a href="https://guapo.igapp.cl" target="_blank" rel="noopener" class="case-preview">
+                    <img src="https://res.cloudinary.com/de8mq5b9q/image/upload/q_auto/f_auto/v1779611213/guapo_mi1qha.png" alt="GUAPO Art Gallery — galería de arte contemporáneo" loading="lazy">
+                </a>
+                <div class="case-info">
+                    <p class="case-domain">guapo.igapp.cl</p>
+                    <h3 class="case-name">GUAPO Art Gallery</h3>
+                    <p class="case-desc">Galería de arte contemporáneo dedicada a la fotografía y arte sudamericano emergente y underground.</p>
+                    <a href="https://guapo.igapp.cl" target="_blank" rel="noopener" class="btn-link case-cta">Visitar sitio <span class="arrow">→</span></a>
+                </div>
+            </article>
+            <article class="glass-card case-card reveal" style="transition-delay:100ms">
+                <a href="https://almaanimal.igapp.cl" target="_blank" rel="noopener" class="case-preview">
+                    <img src="https://res.cloudinary.com/de8mq5b9q/image/upload/q_auto/f_auto/v1779611213/almaanimal_qvmknr.png" alt="Alma Animal — terapia energética para mascotas" loading="lazy">
+                </a>
+                <div class="case-info">
+                    <p class="case-domain">almaanimal.igapp.cl</p>
+                    <h3 class="case-name">Alma Animal</h3>
+                    <p class="case-desc">Terapia energética a distancia para mascotas: Reiki animal, gemoterapia y aromaterapia para equilibrar emociones y vitalidad.</p>
+                    <a href="https://almaanimal.igapp.cl" target="_blank" rel="noopener" class="btn-link case-cta">Visitar sitio <span class="arrow">→</span></a>
+                </div>
+            </article>
+        </div>
+        <div class="text-center mt-4 reveal" style="margin-top:3rem;">
+            <a href="#contacto" class="btn btn-primary btn-large">Quiero mi caso aquí en 72h</a>
         </div>
     </div>
 </section>
