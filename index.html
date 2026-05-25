@@ -38,7 +38,10 @@
                 <li><a href="#proceso">Metodología</a></li>
             </ul>
         </nav>
-        <a href="#contacto" class="btn btn-primary">Iniciar Auditoría</a>
+        <a href="#contacto" class="btn btn-primary"
+           data-cal-namespace="asesoria-30min"
+           data-cal-link="influencergroup/asesoria-30min"
+           data-cal-config='{"layout":"month_view","theme":"auto"}'>Iniciar Auditoría</a>
         <div class="mobile-menu-btn"><span></span><span></span><span></span></div>
     </div>
 </header>
@@ -52,7 +55,10 @@
             <h1 class="hero-title">Sistemas inteligentes para<br><span>operaciones escalables</span></h1>
             <p class="hero-subtitle">Influencer Group diseña infraestructuras digitales que integran sistemas, organizan información y automatizan tareas mediante inteligencia artificial.</p>
             <div class="hero-actions">
-                <a href="#contacto" class="btn btn-primary btn-large">Solicitar diagnóstico gratuito</a>
+                <a href="#contacto" class="btn btn-primary btn-large"
+                   data-cal-namespace="asesoria-30min"
+                   data-cal-link="influencergroup/asesoria-30min"
+                   data-cal-config='{"layout":"month_view","theme":"auto"}'>Solicitar diagnóstico gratuito</a>
                 <a href="#micro-soluciones" class="btn-link">Ver soluciones <span class="arrow">→</span></a>
             </div>
         </div>
@@ -223,5 +229,39 @@
 </div><!-- end .sections-bg -->
 
 <script src="script.js"></script>
+
+<!-- Cal.com embed loader (Asesoría IGApp 30min) -->
+<script type="text/javascript">
+(function (C, A, L) {
+  let p = function (a, ar) { a.q.push(ar); };
+  let d = C.document;
+  C.Cal = C.Cal || function () {
+    let cal = C.Cal; let ar = arguments;
+    if (!cal.loaded) {
+      cal.ns = {}; cal.q = cal.q || [];
+      d.head.appendChild(d.createElement("script")).src = A;
+      cal.loaded = true;
+    }
+    if (ar[0] === L) {
+      const api = function () { p(api, arguments); };
+      const namespace = ar[1]; api.q = api.q || [];
+      if (typeof namespace === "string") {
+        cal.ns[namespace] = cal.ns[namespace] || api;
+        p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]);
+      } else { p(cal, ar); }
+      return;
+    }
+    p(cal, ar);
+  };
+})(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", "asesoria-30min", { origin: "https://cal.com" });
+Cal.ns["asesoria-30min"]("ui", {
+  theme: "auto",
+  cssVarsPerTheme: { light: { "cal-brand": "#0091FF" }, dark: { "cal-brand": "#0091FF" } },
+  hideEventTypeDetails: false,
+  layout: "month_view"
+});
+</script>
+<!-- /Cal.com embed -->
 </body>
 </html>
