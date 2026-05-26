@@ -38,6 +38,7 @@
                 <li><a href="#para-quien">Para quién es</a></li>
                 <li><a href="#que-incluye">¿Qué incluye?</a></li>
                 <li><a href="#casos">Casos</a></li>
+                <li><a href="#comparativa">Comparativa</a></li>
                 <li><a href="#faq">FAQ</a></li>
             </ul>
         </nav>
@@ -447,6 +448,169 @@
             <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem; margin-top: 1rem;">
                 <p style="margin-bottom: 0.5rem; font-size: 1.1rem;">💡 <strong>Con una sola venta o cliente puedes recuperar completamente la inversión.</strong></p>
                 <p style="color: var(--text-muted);">Una campaña bien ejecutada puede multiplicar varias veces el valor de esta landing.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COMPARATIVA DE PRECIOS -->
+<style>
+.comparativa-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--text);
+}
+.comparativa-table th,
+.comparativa-table td {
+    padding: 1rem 0.85rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    font-size: 0.95rem;
+    vertical-align: middle;
+}
+.comparativa-table th {
+    background: rgba(255,255,255,0.04);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+}
+.comparativa-table tr.highlight {
+    background: linear-gradient(90deg, rgba(255,194,71,0.10), rgba(16,185,129,0.10));
+}
+.comparativa-table tr.highlight td {
+    border-bottom: none;
+    padding: 1.4rem 0.85rem;
+    font-weight: 600;
+}
+.comparativa-table tr.highlight td:first-child {
+    border-left: 3px solid #10b981;
+}
+.comparativa-table tr:last-child td { border-bottom: none; }
+
+/* Mobile: tabla → cards stackeadas */
+@media (max-width: 768px) {
+    .comparativa-table,
+    .comparativa-table thead,
+    .comparativa-table tbody,
+    .comparativa-table tr,
+    .comparativa-table td { display: block; }
+    .comparativa-table thead { display: none; }
+    .comparativa-table tr {
+        margin-bottom: 1.2rem;
+        padding: 1rem;
+        background: rgba(255,255,255,0.04);
+        border-radius: 10px;
+        border-left: 3px solid rgba(255,255,255,0.1);
+    }
+    .comparativa-table tr.highlight {
+        border-left: 3px solid #10b981;
+        background: linear-gradient(135deg, rgba(255,194,71,0.10), rgba(16,185,129,0.10));
+    }
+    .comparativa-table tr.highlight td:first-child { border-left: none; padding: 0.45rem 0; }
+    .comparativa-table td {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.45rem 0;
+        border: none;
+        font-size: 0.9rem;
+    }
+    .comparativa-table td::before {
+        content: attr(data-label);
+        font-weight: 700;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        font-size: 0.72rem;
+        letter-spacing: 0.5px;
+        flex-shrink: 0;
+    }
+    .comparativa-table td:first-child {
+        font-size: 1.05rem;
+        font-weight: 700;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+        margin-bottom: 0.5rem;
+    }
+    .comparativa-table td:first-child::before { display: none; }
+}
+</style>
+<section class="section" id="comparativa">
+    <div class="container">
+        <div class="section-header text-center reveal">
+            <span class="badge">Comparativa</span>
+            <h2 class="section-title">¿Cuánto cuesta una landing profesional en Chile?</h2>
+            <p class="section-desc mx-auto">Te dejamos los rangos del mercado chileno para que evalúes con datos.</p>
+        </div>
+
+        <div class="glass-card mt-4 reveal" style="padding: 1.5rem; overflow-x: auto;">
+            <table class="comparativa-table">
+                <thead>
+                    <tr>
+                        <th>Vía</th>
+                        <th>Costo</th>
+                        <th>Entrega</th>
+                        <th>Mantenimiento</th>
+                        <th>Soporte</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Vía">DIY (Wix / Squarespace)</td>
+                        <td data-label="Costo">$0–15.000/mes</td>
+                        <td data-label="Entrega">10–30 horas tuyas</td>
+                        <td data-label="Mantenimiento">Tú lo arreglas</td>
+                        <td data-label="Soporte">Foros</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Vía">Freelancer junior</td>
+                        <td data-label="Costo">$80.000–150.000</td>
+                        <td data-label="Entrega">2–4 semanas</td>
+                        <td data-label="Mantenimiento">Aparte ($30k+/mes)</td>
+                        <td data-label="Soporte">Inconstante</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Vía">Freelancer senior</td>
+                        <td data-label="Costo">$250.000–500.000</td>
+                        <td data-label="Entrega">3–6 semanas</td>
+                        <td data-label="Mantenimiento">Aparte ($50k+/mes)</td>
+                        <td data-label="Soporte">Bueno si responde</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Vía">Agencia chica</td>
+                        <td data-label="Costo">$400.000–800.000</td>
+                        <td data-label="Entrega">4–8 semanas</td>
+                        <td data-label="Mantenimiento">Plan mensual ($80k+)</td>
+                        <td data-label="Soporte">Email / chat</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Vía">Agencia grande</td>
+                        <td data-label="Costo">$1M–3M+</td>
+                        <td data-label="Entrega">2–4 meses</td>
+                        <td data-label="Mantenimiento">Retainer ($200k+)</td>
+                        <td data-label="Soporte">Ejecutivo asignado</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td data-label="Vía">⭐ IGApp Landing Express</td>
+                        <td data-label="Costo" style="color:#10b981;">$29.990 + $4.990/mes</td>
+                        <td data-label="Entrega" style="color:#FFC247;">72 horas</td>
+                        <td data-label="Mantenimiento">Incluido</td>
+                        <td data-label="Soporte">Directo</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="text-align:center; margin-top:2rem; font-size:1.1rem; color:var(--text-muted); line-height:1.6;">
+                Te entregamos en <strong style="color:#FFC247;">72 horas</strong> lo que un freelancer junior promete en 3 semanas — a una fracción del costo, con mantenimiento incluido.
+            </p>
+
+            <div class="text-center" style="margin-top:1.5rem;">
+                <a href="#" class="btn btn-primary btn-large"
+                   data-cal-namespace="asesoria-30min"
+                   data-cal-link="influencergroup/asesoria-30min"
+                   data-cal-config='{"layout":"month_view","theme":"auto"}'>Activar mi landing en 72h — antes del 30 de junio</a>
+                <p style="margin-top:0.75rem; font-size:0.85rem; color:var(--text-muted);">⏳ Precio promocional válido solo hasta el 30 de junio · Cupos limitados</p>
             </div>
         </div>
     </div>
