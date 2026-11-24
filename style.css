@@ -389,3 +389,36 @@ input:focus,textarea:focus{border-color:var(--accent-primary);box-shadow:0 0 0 3
     .footer-grid{gap:1.5rem;}
     .footer-bottom{font-size:.8rem;}
 }
+
+/* ─── FONDO v2 (nov 2026): base tinta + grilla fina + auroras suaves ─── */
+body{background:#08070c;}
+#hero-canvas{display:none;}
+.hero{
+    background:
+        radial-gradient(ellipse 60% 45% at 50% 0%, rgba(229,57,53,.40) 0%, transparent 70%),
+        radial-gradient(ellipse 45% 40% at 85% 30%, rgba(194,24,91,.16) 0%, transparent 70%),
+        radial-gradient(ellipse 45% 40% at 12% 70%, rgba(123,31,162,.14) 0%, transparent 70%),
+        #08070c;
+}
+.hero::before{
+    content:'';position:absolute;inset:0;z-index:0;pointer-events:none;
+    background-image:
+        linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+    background-size:64px 64px;
+    -webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 80%);
+            mask-image:radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 80%);
+}
+.hero-horizon{
+    height:1px;
+    background:linear-gradient(90deg,transparent 0%,rgba(229,57,53,.7) 35%,rgba(194,24,91,.6) 65%,transparent 100%);
+    box-shadow:0 0 30px 4px rgba(229,57,53,.25);
+}
+.sections-bg{
+    background-color:#08070c;
+    background-image:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+    background-size:64px 64px;
+}
+.sections-bg::before{background:linear-gradient(to bottom,#08070c,transparent);}
